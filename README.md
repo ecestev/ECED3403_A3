@@ -24,13 +24,13 @@ is inspected, if the address in question exists in the cache, a hit has occurred
 There are different ways in organizing cache memory in order to help increase the hit ratio; two
 extremes are to be emulated in this assignment:
 
-	Associative. In associative, the cache circuitry inspects each cache line for the target address
-	(this is effectively a linear search). There is no relationship between the target address and its
-	location in the cache memory.
+Associative. In associative, the cache circuitry inspects each cache line for the target address
+(this is effectively a linear search). There is no relationship between the target address and its
+location in the cache memory.
 	
-	Direct mapping. In direct mapping, the target address is mapped directly into a cache line (this
-	is a hash mapping). There is a direct relationship between the target address and its location
-	in the cache memory.
+Direct mapping. In direct mapping, the target address is mapped directly into a cache line (this
+is a hash mapping). There is a direct relationship between the target address and its location
+in the cache memory.
 
 The cache memory is to contain 32 lines, regardless of organization.
 
