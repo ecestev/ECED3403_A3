@@ -1,0 +1,529 @@
+------------------------------------------------------------
+                    MSP-430 ISA EMULATOR
+                Written By: Stephen Sampson
+                    Dalhousie University
+         Dept. Electrical and Computer Engineering
+------------------------------------------------------------
+
+NOTE TO USER:
+     - To initiate the debugger, simultaneously press both
+       'CTRL' and 'C' on your keyboard at any time.
+     - Emulation will run with full diagnostic information
+
+ATTEMPTING TO OPEN: 4_DEV_TEST.s19
+SUCCESSFULLY OPENED: 4_DEV_TEST.s19
+LOADING DATA TO MEMOERY... PLEASE WAIT
+FINISHED LOADING TO MEMORY
+CONFIGURING DEVICES
+FINISHED CONFIGURING DEVICES
+MSP-430 ISA EMULATION STARTED AT MEMORY[0x0100]
+
+
+INST:      MOV
+SRCOP:     1111111111000000
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    8
+
+
+INST:      MOV
+SRCOP:     0000000000000011
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    20
+
+
+INST:      MOV
+SRCOP:     0000000000000011
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    32
+
+
+INST:      MOV
+SRCOP:     0000000000000011
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    44
+
+
+INST:      MOV
+SRCOP:     0000000000000001
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    56
+
+
+INST:      MOV
+SRCOP:     0000000000000001
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    68
+
+
+INST:      MOV
+SRCOP:     0000000000000001
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    80
+
+
+INST:      BIS
+SRCOP:     0000000000001000
+DSTOP:     0000000000000000
+RESULT:    0000000000001000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    88
+
+-----------------------------------
+INTERRUPT DETECTED!
+-----------------------------------
+SYS_CLK: 88
+0x33 READ FROM DEVICE: 0
+ISR_VECT_LOC: FFC0
+ISR_ENTRY_PT: 0200
+PC CHANGED FROM: 0x012C TO: 0x0200
+-----------------------------------
+
+
+INST:      MOV
+SRCOP:     1100110000110011
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    102
+
+
+INST:      MOV
+SRCOP:     0000000000000111
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    110
+
+-----------------------------------
+INTERRUPT SERVICE ROUTINE COMPLETE!
+-----------------------------------
+
+
+INST:      RETI
+SRCOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    122
+
+-----------------------------------
+INTERRUPT DETECTED!
+-----------------------------------
+SYS_CLK: 122
+0x37 READ FROM DEVICE: 1
+ISR_VECT_LOC: FFC2
+ISR_ENTRY_PT: 020C
+PC CHANGED FROM: 0x012C TO: 0x020C
+-----------------------------------
+
+
+INST:      MOV
+SRCOP:     1100110000110111
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    136
+
+
+INST:      ADD
+SRCOP:     0000000000001000
+DSTOP:     0000000000000000
+RESULT:    0000000000001000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    144
+
+-----------------------------------
+INTERRUPT SERVICE ROUTINE COMPLETE!
+-----------------------------------
+
+
+INST:      RETI
+SRCOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    148
+
+-----------------------------------
+INTERRUPT DETECTED!
+-----------------------------------
+SYS_CLK: 148
+0x38 READ FROM DEVICE: 2
+ISR_VECT_LOC: FFC4
+ISR_ENTRY_PT: 0218
+PC CHANGED FROM: 0x012C TO: 0x0218
+-----------------------------------
+
+
+INST:      MOV
+SRCOP:     1100110000111000
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    162
+
+
+INST:      ADD
+SRCOP:     0000000000001001
+DSTOP:     0000000000000000
+RESULT:    0000000000001001
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    170
+
+-----------------------------------
+INTERRUPT SERVICE ROUTINE COMPLETE!
+-----------------------------------
+
+
+INST:      RETI
+SRCOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    174
+
+
+INST:      ADD
+SRCOP:     0000000000000001
+DSTOP:     0000000000000000
+RESULT:    0000000000000001
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    182
+
+
+INST:      CMP
+SRCOP:     0000000000001010
+DSTOP:     0000000000000001
+RESULT:    1111111111110111
+{V,N,Z,C}: {0, 1, 0, 0}
+SYSCLK:    190
+
+
+INST:      ADD
+SRCOP:     0000000000000001
+DSTOP:     0000000000000001
+RESULT:    0000000000000010
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    194
+
+
+INST:      CMP
+SRCOP:     0000000000001010
+DSTOP:     0000000000000010
+RESULT:    1111111111111000
+{V,N,Z,C}: {0, 1, 0, 0}
+SYSCLK:    194
+
+
+INST:      ADD
+SRCOP:     0000000000000001
+DSTOP:     0000000000000010
+RESULT:    0000000000000011
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    194
+
+
+INST:      CMP
+SRCOP:     0000000000001010
+DSTOP:     0000000000000011
+RESULT:    1111111111111001
+{V,N,Z,C}: {0, 1, 0, 0}
+SYSCLK:    194
+
+
+INST:      ADD
+SRCOP:     0000000000000001
+DSTOP:     0000000000000011
+RESULT:    0000000000000100
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    194
+
+
+INST:      CMP
+SRCOP:     0000000000001010
+DSTOP:     0000000000000100
+RESULT:    1111111111111010
+{V,N,Z,C}: {0, 1, 0, 0}
+SYSCLK:    194
+
+
+INST:      ADD
+SRCOP:     0000000000000001
+DSTOP:     0000000000000100
+RESULT:    0000000000000101
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    194
+
+
+INST:      CMP
+SRCOP:     0000000000001010
+DSTOP:     0000000000000101
+RESULT:    1111111111111011
+{V,N,Z,C}: {0, 1, 0, 0}
+SYSCLK:    194
+
+
+INST:      ADD
+SRCOP:     0000000000000001
+DSTOP:     0000000000000101
+RESULT:    0000000000000110
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    194
+
+
+INST:      CMP
+SRCOP:     0000000000001010
+DSTOP:     0000000000000110
+RESULT:    1111111111111100
+{V,N,Z,C}: {0, 1, 0, 0}
+SYSCLK:    194
+
+
+INST:      ADD
+SRCOP:     0000000000000001
+DSTOP:     0000000000000110
+RESULT:    0000000000000111
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    194
+
+
+INST:      CMP
+SRCOP:     0000000000001010
+DSTOP:     0000000000000111
+RESULT:    1111111111111101
+{V,N,Z,C}: {0, 1, 0, 0}
+SYSCLK:    194
+
+
+INST:      ADD
+SRCOP:     0000000000000001
+DSTOP:     0000000000000111
+RESULT:    0000000000001000
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    194
+
+
+INST:      CMP
+SRCOP:     0000000000001010
+DSTOP:     0000000000001000
+RESULT:    1111111111111110
+{V,N,Z,C}: {0, 1, 0, 0}
+SYSCLK:    194
+
+
+INST:      ADD
+SRCOP:     0000000000000001
+DSTOP:     0000000000001000
+RESULT:    0000000000001001
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    194
+
+
+INST:      CMP
+SRCOP:     0000000000001010
+DSTOP:     0000000000001001
+RESULT:    1111111111111111
+{V,N,Z,C}: {0, 1, 0, 0}
+SYSCLK:    194
+
+
+INST:      ADD
+SRCOP:     0000000000000001
+DSTOP:     0000000000001001
+RESULT:    0000000000001010
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    194
+
+
+INST:      CMP
+SRCOP:     0000000000001010
+DSTOP:     0000000000001010
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 1, 1}
+SYSCLK:    194
+
+------------------------------------------------------------
+                   DEBUGGER INITIATED...
+------------------------------------------------------------
+
+This is a simple debugger. Supported commands:
+     1) S: Stop Emulation
+     2) M: Print Memory Range to Console
+     3) R: Print Registers to Console
+     4) P: Print Registers and all Non-Zero Memory to Console
+     5) L: Load new s19
+          6) H: Print Cache
+     7) X: Do nothing. Return
+
+ENTER COMMAND: p
+
+
+REGISTER CONTENTS; Loc: R0 - R15
+R0: 0x0136
+R1: 0xFFC0
+R2: 0x000B
+R3: 0x0000
+R4: 0x0000
+R5: 0x0000
+R6: 0x000A
+R7: 0x0007
+R8: 0x0008
+R9: 0x0009
+R10: 0x0000
+R11: 0x0000
+R12: 0x0000
+R13: 0x0000
+R14: 0x0000
+R15: 0x0000
+
+
+DATA MEMORY; Loc: 0x0000 - 0x0100
+Location 0x0000: 0x3301
+Location 0x0002: 0x3701
+Location 0x0004: 0x3801
+Location 0x0006: 0x3301
+Location 0x0008: 0x3701
+Location 0x000A: 0x3801
+
+
+INSTRUCTION MEMORY; Loc: 0x0100 - SP(0xFFC0)
+Location 0x0100: 0x4031
+Location 0x0102: 0xFFC0
+Location 0x0104: 0x40B2
+Location 0x0106: 0x0003
+Location 0x010A: 0x40B2
+Location 0x010C: 0x0003
+Location 0x010E: 0x0002
+Location 0x0110: 0x40B2
+Location 0x0112: 0x0003
+Location 0x0114: 0x0004
+Location 0x0116: 0x40B2
+Location 0x0118: 0x0001
+Location 0x011A: 0x0006
+Location 0x011C: 0x40B2
+Location 0x011E: 0x0001
+Location 0x0120: 0x0008
+Location 0x0122: 0x40B2
+Location 0x0124: 0x0001
+Location 0x0126: 0x000A
+Location 0x0128: 0xD032
+Location 0x012A: 0x0008
+Location 0x012C: 0x5036
+Location 0x012E: 0x0001
+Location 0x0130: 0x9036
+Location 0x0132: 0x000A
+Location 0x0134: 0x23FB
+Location 0x0136: 0x3FFF
+Location 0x0200: 0x4292
+Location 0x0202: 0x0001
+Location 0x0204: 0x0007
+Location 0x0206: 0x4037
+Location 0x0208: 0x0007
+Location 0x020A: 0x1300
+Location 0x020C: 0x4292
+Location 0x020E: 0x0003
+Location 0x0210: 0x0009
+Location 0x0212: 0x5038
+Location 0x0214: 0x0008
+Location 0x0216: 0x1300
+Location 0x0218: 0x4292
+Location 0x021A: 0x0005
+Location 0x021C: 0x000B
+Location 0x021E: 0x5039
+Location 0x0220: 0x0009
+Location 0x0222: 0x1300
+Location 0x0224: 0x4292
+Location 0x0226: 0x0007
+Location 0x0228: 0x0032
+Location 0x022A: 0x503A
+Location 0x022C: 0x000A
+Location 0x022E: 0x1300
+Location 0x0230: 0x4292
+Location 0x0232: 0x0009
+Location 0x0234: 0x0032
+Location 0x0236: 0x503B
+Location 0x0238: 0x000B
+Location 0x023A: 0x1300
+Location 0x023C: 0x4292
+Location 0x023E: 0x000B
+Location 0x0240: 0x0032
+Location 0x0242: 0x503C
+Location 0x0244: 0x000C
+Location 0x0246: 0x1300
+Location 0xFFBC: 0x0008
+Location 0xFFBE: 0x012C
+
+
+STACK MEMORY; Loc: 0xFFC0 - 0xFFC0
+
+
+HIGH MEMORY (ISRVECTS); Loc: 0xFFC0 - 0xFFFF
+Location 0xFFC0: 0x0200
+Location 0xFFC2: 0x020C
+Location 0xFFC4: 0x0218
+Location 0xFFC6: 0x0224
+Location 0xFFC8: 0x0230
+Location 0xFFCA: 0x023C
+
+------------------------------------------------------------
+                   DEBUGGER INITIATED...
+------------------------------------------------------------
+
+This is a simple debugger. Supported commands:
+     1) S: Stop Emulation
+     2) M: Print Memory Range to Console
+     3) R: Print Registers to Console
+     4) P: Print Registers and all Non-Zero Memory to Console
+     5) L: Load new s19
+          6) H: Print Cache
+     7) X: Do nothing. Return
+
+ENTER COMMAND: h
+------------------------------------------------------------
+                      CACHE CONTENTS
+------------------------------------------------------------
+
+LINE   ADDRESS   CONTENTS   LRU   DIRTY   HITS
+0      0x0134    0xFB       28    0       11
+1      0x0135    0x23       29    0       11
+2      0x0136    0xFF       30    0       19361
+3      0x0137    0x3F       31    0       19827
+4      0x0214    0x08        0    0       0
+5      0x0215    0x00        1    0       0
+6      0x0216    0x00        2    0       1
+7      0x0217    0x13        3    0       1
+8      0x0218    0x92        4    0       1
+9      0x0219    0x42        5    0       1
+10     0x021A    0x05        6    0       0
+11     0x021B    0x00        7    0       0
+12     0x021C    0x0B        8    0       1
+13     0x021D    0x00        9    0       1
+14     0x021E    0x39       10    0       1
+15     0x021F    0x50       11    0       1
+16     0x0220    0x09       12    0       1
+17     0x0221    0x00       13    0       1
+18     0x0222    0x00       14    0       0
+19     0x0223    0x13       15    0       0
+20     0x012C    0x36       20    0       10
+21     0x012D    0x50       21    0       10
+22     0x012E    0x01       22    0       9
+23     0x012F    0x00       23    0       9
+24     0xFFBC    0x08       16    0       2
+25     0xFFBD    0x00       17    0       2
+26     0xFFBE    0x2C       18    0       3
+27     0xFFBF    0x01       19    0       3
+28     0x0130    0x36       24    0       9
+29     0x0131    0x90       25    0       9
+30     0x0132    0x0A       26    0       9
+31     0x0133    0x00       27    0       9

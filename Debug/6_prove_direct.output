@@ -1,0 +1,74 @@
+------------------------------------------------------------
+                    MSP-430 ISA EMULATOR
+                Written By: Stephen Sampson
+                    Dalhousie University
+         Dept. Electrical and Computer Engineering
+------------------------------------------------------------
+
+NOTE TO USER:
+     - To initiate the debugger, simultaneously press both
+       'CTRL' and 'C' on your keyboard at any time.
+     - Emulation will run with limited diagnostic information
+
+ATTEMPTING TO OPEN: 6_prove_direct._SRECORDS.s19
+SUCCESSFULLY OPENED: 6_prove_direct._SRECORDS.s19
+LOADING DATA TO MEMOERY... PLEASE WAIT
+FINISHED LOADING TO MEMORY
+CONFIGURING DEVICES
+FINISHED CONFIGURING DEVICES
+Please enter how many clock cycles you would like to emulate for: 1000
+Please Select a Cache Organization Scheme: [ASSOCIATIVE:0 | DIRECT_MAPPED:1]1
+Please Select a Cache Write Method: [WRITE_BACK:0 | WRITE_THROUGH:1]0
+MSP-430 ISA EMULATION STARTED AT MEMORY[0x0CC0]
+
+------------------------------------------------------------
+                   DEBUGGER INITIATED...
+------------------------------------------------------------
+
+This is a simple debugger. Supported commands:
+     1) S: Stop Emulation
+     2) M: Print Memory Range to Console
+     3) R: Print Registers to Console
+     4) P: Print Registers and all Non-Zero Memory to Console
+     5) L: Load new s19
+          6) H: Print Cache
+     7) X: Do nothing. Return
+
+ENTER COMMAND: h
+------------------------------------------------------------
+                      CACHE CONTENTS
+------------------------------------------------------------
+
+LINE   ADDRESS   CONTENTS   LRU   DIRTY   HITS
+0      0x0CC0    0xB2        0    0       0
+1      0x0CC1    0x40        0    0       0
+2      0x0CC2    0xB2        0    0       0
+3      0x0CC3    0xA1        0    0       0
+4      0x0CC4    0xB0        0    0       1
+5      0x0CC5    0x0B        0    0       1
+6      0x0CC6    0xB2        0    0       0
+7      0x0CC7    0x40        0    0       0
+8      0x0CC8    0xD4        0    0       0
+9      0x0CC9    0xC3        0    0       0
+10     0x0CCA    0xB2        0    0       1
+11     0x0CCB    0x0B        0    0       1
+12     0x0CCC    0xB2        0    0       0
+13     0x0CCD    0x40        0    0       0
+14     0x0BCE    0x11        0    0       150
+15     0x0BCF    0x11        0    0       150
+16     0x0BB0    0x00        0    0       152
+17     0x0BB1    0x00        0    0       152
+18     0x0CD2    0x92        0    0       151
+19     0x0CD3    0x92        0    0       151
+20     0x0CD4    0xB0        0    0       151
+21     0x0CD5    0x0B        0    0       151
+22     0x0CD6    0xCE        0    0       150
+23     0x0CD7    0x0B        0    0       150
+24     0x0CD8    0xFC        0    0       149
+25     0x0CD9    0x3F        0    0       149
+26     0x0000    0x00        0    0       0
+27     0x0000    0x00        0    0       0
+28     0x0000    0x00        0    0       0
+29     0x0000    0x00        0    0       0
+30     0x0000    0x00        0    0       0
+31     0x0000    0x00        0    0       0

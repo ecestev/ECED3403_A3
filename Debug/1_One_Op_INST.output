@@ -1,0 +1,153 @@
+------------------------------------------------------------
+                    MSP-430 ISA EMULATOR
+                Written By: Stephen Sampson
+                    Dalhousie University
+         Dept. Electrical and Computer Engineering
+------------------------------------------------------------
+
+NOTE TO USER:
+     - To initiate the debugger, simultaneously press both
+       'CTRL' and 'C' on your keyboard at any time.
+     - Emulation will run with full diagnostic information
+
+ATTEMPTING TO OPEN: 1_One_Op_INST.s19
+SUCCESSFULLY OPENED: 1_One_Op_INST.s19
+LOADING DATA TO MEMOERY... PLEASE WAIT
+FINISHED LOADING TO MEMORY
+CONFIGURING DEVICES
+FINISHED CONFIGURING DEVICES
+MSP-430 ISA EMULATION STARTED AT MEMORY[0x1000]
+
+
+INST:      RRC
+SRCOP:     0001001000110100
+RESULT:    0000100100011010
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    8
+
+
+INST:      SWPB
+SRCOP:     1111111100000000
+RESULT:    0000000011111111
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    12
+
+
+INST:      RRA
+SRCOP:     1000101010101011
+RESULT:    1100010101010101
+{V,N,Z,C}: {0, 1, 0, 1}
+SYSCLK:    16
+
+
+INST:      SXT
+SRCOP:     0000000010000000
+RESULT:    1111111110000000
+{V,N,Z,C}: {0, 1, 0, 1}
+SYSCLK:    20
+
+------------------------------------------------------------
+                   DEBUGGER INITIATED...
+------------------------------------------------------------
+
+This is a simple debugger. Supported commands:
+     1) S: Stop Emulation
+     2) M: Print Memory Range to Console
+     3) R: Print Registers to Console
+     4) P: Print Registers and all Non-Zero Memory to Console
+     5) L: Load new s19
+          6) H: Print Cache
+     7) X: Do nothing. Return
+
+ENTER COMMAND: p
+
+
+REGISTER CONTENTS; Loc: R0 - R15
+R0: 0x1008
+R1: 0xFFC0
+R2: 0x000D
+R3: 0x0000
+R4: 0x1000
+R5: 0x00FF
+R6: 0xC555
+R7: 0xFF80
+R8: 0x0000
+R9: 0xF000
+R10: 0x0F00
+R11: 0x00F0
+R12: 0x000F
+R13: 0x000F
+R14: 0x000F
+R15: 0x000F
+
+
+DATA MEMORY; Loc: 0x0000 - 0x1000
+Location 0x0000: 0x000C
+Location 0x0FFC: 0x1357
+Location 0x0FFE: 0x1234
+
+
+INSTRUCTION MEMORY; Loc: 0x1000 - SP(0xFFC0)
+Location 0x1000: 0x1034
+Location 0x1002: 0x1085
+Location 0x1004: 0x1106
+Location 0x1006: 0x1187
+Location 0x1008: 0x1207
+
+
+STACK MEMORY; Loc: 0xFFC0 - 0xFFC0
+
+
+HIGH MEMORY (ISRVECTS); Loc: 0xFFC0 - 0xFFFF
+
+------------------------------------------------------------
+                   DEBUGGER INITIATED...
+------------------------------------------------------------
+
+This is a simple debugger. Supported commands:
+     1) S: Stop Emulation
+     2) M: Print Memory Range to Console
+     3) R: Print Registers to Console
+     4) P: Print Registers and all Non-Zero Memory to Console
+     5) L: Load new s19
+          6) H: Print Cache
+     7) X: Do nothing. Return
+
+ENTER COMMAND: h
+------------------------------------------------------------
+                      CACHE CONTENTS
+------------------------------------------------------------
+
+LINE   ADDRESS   CONTENTS   LRU   DIRTY   HITS
+0      0x1000    0x34       22    0       0
+1      0x1001    0x10       23    0       0
+2      0x0FFE    0x34       24    1       1
+3      0x0FFF    0x12       25    1       1
+4      0x1002    0x85       26    0       0
+5      0x1003    0x10       27    0       0
+6      0x1004    0x06       28    0       0
+7      0x1005    0x11       29    0       0
+8      0x1006    0x87       30    0       0
+9      0x1007    0x11       31    0       0
+10     0x0000    0x00        0    0       0
+11     0x0000    0x00        0    0       0
+12     0x0000    0x00        0    0       0
+13     0x0000    0x00        0    0       0
+14     0x0000    0x00        0    0       0
+15     0x0000    0x00        0    0       0
+16     0x0000    0x00        0    0       0
+17     0x0000    0x00        0    0       0
+18     0x0000    0x00        0    0       0
+19     0x0000    0x00        0    0       0
+20     0x0000    0x00        0    0       0
+21     0x0000    0x00        0    0       0
+22     0x0000    0x00        0    0       0
+23     0x0000    0x00        0    0       0
+24     0x0000    0x00        0    0       0
+25     0x0000    0x00        0    0       0
+26     0x0000    0x00        0    0       0
+27     0x0000    0x00        0    0       0
+28     0x0000    0x00        0    0       0
+29     0x0000    0x00        0    0       0
+30     0x0000    0x00        0    0       0
+31     0x0000    0x00        0    0       0

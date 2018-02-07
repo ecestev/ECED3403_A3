@@ -1,0 +1,222 @@
+------------------------------------------------------------
+                    MSP-430 ISA EMULATOR
+                Written By: Stephen Sampson
+                    Dalhousie University
+         Dept. Electrical and Computer Engineering
+------------------------------------------------------------
+
+NOTE TO USER:
+     - To initiate the debugger, simultaneously press both
+       'CTRL' and 'C' on your keyboard at any time.
+     - Emulation will run with full diagnostic information
+
+ATTEMPTING TO OPEN: 2_Two_Op_INST.s19
+SUCCESSFULLY OPENED: 2_Two_Op_INST.s19
+LOADING DATA TO MEMOERY... PLEASE WAIT
+FINISHED LOADING TO MEMORY
+CONFIGURING DEVICES
+FINISHED CONFIGURING DEVICES
+MSP-430 ISA EMULATION STARTED AT MEMORY[0x1000]
+
+
+INST:      MOV
+SRCOP:     0001001000110100
+DSTOP:     0000000000000000
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 1, 0, 1}
+SYSCLK:    8
+
+
+INST:      ADD
+SRCOP:     1100010101010101
+DSTOP:     1111000000000000
+RESULT:    1011010101010101
+{V,N,Z,C}: {0, 1, 0, 1}
+SYSCLK:    12
+
+
+INST:      ADDC
+SRCOP:     1100010101010101
+DSTOP:     0000111100000000
+RESULT:    1101010001010110
+{V,N,Z,C}: {0, 1, 0, 0}
+SYSCLK:    16
+
+
+INST:      SUBC
+SRCOP:     1100010101010101
+DSTOP:     0000000011110000
+RESULT:    0011101110011010
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    20
+
+
+INST:      SUB
+SRCOP:     1100010101010101
+DSTOP:     0000000000001111
+RESULT:    0011101010111010
+{V,N,Z,C}: {0, 0, 0, 0}
+SYSCLK:    24
+
+
+INST:      CMP
+SRCOP:     0000000011111111
+DSTOP:     0011101010111010
+RESULT:    0011100110111011
+{V,N,Z,C}: {0, 0, 0, 1}
+SYSCLK:    28
+
+
+INST:      BIT
+SRCOP:     0000000011111111
+DSTOP:     0011101010111010
+RESULT:    0000000010111010
+{V,N,Z,C}: {0, 0, 0, 1}
+SYSCLK:    32
+
+
+INST:      BIC
+SRCOP:     0000000011111111
+DSTOP:     0000000000001111
+RESULT:    0000000000000000
+{V,N,Z,C}: {0, 0, 0, 1}
+SYSCLK:    36
+
+
+INST:      BIS
+SRCOP:     0000000011111111
+DSTOP:     0000000000001111
+RESULT:    0000000011111111
+{V,N,Z,C}: {0, 0, 0, 1}
+SYSCLK:    40
+
+
+INST:      XOR
+SRCOP:     0000000011111111
+DSTOP:     0000000000001111
+RESULT:    0000000011110000
+{V,N,Z,C}: {0, 0, 0, 1}
+SYSCLK:    44
+
+
+INST:      AND
+SRCOP:     1111000011110000
+DSTOP:     0001001101010111
+RESULT:    0001000001010000
+{V,N,Z,C}: {0, 0, 0, 1}
+SYSCLK:    60
+
+------------------------------------------------------------
+                   DEBUGGER INITIATED...
+------------------------------------------------------------
+
+This is a simple debugger. Supported commands:
+     1) S: Stop Emulation
+     2) M: Print Memory Range to Console
+     3) R: Print Registers to Console
+     4) P: Print Registers and all Non-Zero Memory to Console
+     5) L: Load new s19
+          6) H: Print Cache
+     7) X: Do nothing. Return
+
+ENTER COMMAND: p
+
+
+REGISTER CONTENTS; Loc: R0 - R15
+R0: 0x101C
+R1: 0xFFBE
+R2: 0x0009
+R3: 0x0000
+R4: 0x1000
+R5: 0x00FF
+R6: 0xC555
+R7: 0xFF80
+R8: 0x1234
+R9: 0xB555
+R10: 0xD456
+R11: 0x3B9A
+R12: 0x3ABA
+R13: 0x0000
+R14: 0x00FF
+R15: 0x00F0
+
+
+DATA MEMORY; Loc: 0x0000 - 0x1000
+Location 0x0000: 0x000C
+Location 0x0FFC: 0x1357
+Location 0x0FFE: 0x091A
+
+
+INSTRUCTION MEMORY; Loc: 0x1000 - SP(0xFFBE)
+Location 0x1000: 0x4038
+Location 0x1002: 0x1234
+Location 0x1004: 0x5609
+Location 0x1006: 0x660A
+Location 0x1008: 0x760B
+Location 0x100A: 0x860C
+Location 0x100C: 0x950C
+Location 0x100E: 0xB50C
+Location 0x1010: 0xC50D
+Location 0x1012: 0xD50E
+Location 0x1014: 0xE50F
+Location 0x1016: 0xF0B2
+Location 0x1018: 0xF0F0
+Location 0x101A: 0x0FFC
+
+
+STACK MEMORY; Loc: 0xFFBE - 0xFFC0
+
+
+HIGH MEMORY (ISRVECTS); Loc: 0xFFC0 - 0xFFFF
+
+------------------------------------------------------------
+                   DEBUGGER INITIATED...
+------------------------------------------------------------
+
+This is a simple debugger. Supported commands:
+     1) S: Stop Emulation
+     2) M: Print Memory Range to Console
+     3) R: Print Registers to Console
+     4) P: Print Registers and all Non-Zero Memory to Console
+     5) L: Load new s19
+          6) H: Print Cache
+     7) X: Do nothing. Return
+
+ENTER COMMAND: h
+------------------------------------------------------------
+                      CACHE CONTENTS
+------------------------------------------------------------
+
+LINE   ADDRESS   CONTENTS   LRU   DIRTY   HITS
+0      0x1000    0x38        2    0       0
+1      0x1001    0x40        3    0       0
+2      0x1002    0x34        4    0       0
+3      0x1003    0x12        5    0       0
+4      0x1004    0x09        6    0       0
+5      0x1005    0x56        7    0       0
+6      0x1006    0x0A        8    0       0
+7      0x1007    0x66        9    0       0
+8      0x1008    0x0B       10    0       0
+9      0x1009    0x76       11    0       0
+10     0x100A    0x0C       12    0       0
+11     0x100B    0x86       13    0       0
+12     0x100C    0x0C       14    0       0
+13     0x100D    0x95       15    0       0
+14     0x100E    0x0C       16    0       0
+15     0x100F    0xB5       17    0       0
+16     0x1010    0x0D       18    0       0
+17     0x1011    0xC5       19    0       0
+18     0x1012    0x0E       20    0       0
+19     0x1013    0xD5       21    0       0
+20     0x1014    0x0F       22    0       0
+21     0x1015    0xE5       23    0       0
+22     0x1016    0xB2       24    0       0
+23     0x1017    0xF0       25    0       0
+24     0x1018    0xF0       26    0       0
+25     0x1019    0xF0       27    0       0
+26     0x101A    0xFC       28    0       1
+27     0x101B    0x0F       29    0       1
+28     0x0FFC    0x57       30    1       1
+29     0x0FFD    0x13       31    1       1
+30     0x0000    0x00        0    0       0
+31     0x0000    0x00        0    0       0
