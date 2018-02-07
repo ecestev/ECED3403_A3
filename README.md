@@ -35,19 +35,7 @@ extremes are to be emulated in this assignment:
 The cache memory is to contain 32 lines, regardless of organization.
 
 When a read or a write operation occurs, a 16-bit target address is supplied to the cache and the
-cache is searched for the target address (see above). There are four possible combinations, as
-shown in Table 1.
-
-Cache actions
-
-Operation 		Result 		Action
-READ 			HIT 		Return contents to CPU.
-READ 			MISS 		Must fetch contents from primary memory and place
-							address and contents in a cache line as well as return
-							contents to CPU. See discussion below.
-WRITE 			HIT 		Update cache. See discussion below.
-WRITE 			MISS 		Find cache line and write address and contents to this
-							cache line. See discussion below.
+cache is searched for the target address (see above). There are four possible combinations.
 
 Memory reads that result in a hit require no further action; however, the remaining three
 combinations require the application of replacement policies. The general policies are as follows:
